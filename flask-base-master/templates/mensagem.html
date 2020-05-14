@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<!--- <form>  ---> 
+
+  <form action='/mensagem/gravar' method='post'>
+  <p>
+    <label for='usuario'>Usuário:</label>
+    <input id='usuario' type='text'>
+  </p>
+  <p>
+    <label for='texto'>Mensagem:</label>
+    <textarea id='texto'></textarea>
+  </p>
+  <p>
+    <input type='submit' value='Enviar'>
+  </p>
+</form>
+
+{% endblock %}

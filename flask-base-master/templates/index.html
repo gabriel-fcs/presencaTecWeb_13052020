@@ -1,0 +1,11 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+  {% for mensagem in mensagens %}
+    <p><b>{{ mensagem.usuario }}</b>: {{ mensagem.texto }}</p>
+  {% else %}
+    <p>Nenhuma mensagem</p>
+  {% endfor %}
+{% endblock %}
